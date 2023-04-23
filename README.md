@@ -1,2 +1,1 @@
-# NeoVim
-Neovim config
+# dotfiles
