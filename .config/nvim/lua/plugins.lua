@@ -11,6 +11,7 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 require("lazy").setup({
+	{'akinsho/toggleterm.nvim', version = '*', config = true}, --better terminal
 	'nvim-tree/nvim-web-devicons',
 	'goolord/alpha-nvim',--main menu
 	'nvim-lua/plenary.nvim',
