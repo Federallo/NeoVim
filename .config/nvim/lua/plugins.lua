@@ -11,6 +11,15 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 require("lazy").setup({
+	--autocompletition
+	{'williamboman/mason.nvim'},
+	{'williamboman/mason-lspconfig.nvim'},
+	{'VonHeikemen/lsp-zero.nvim', branch = 'v3.x'},
+	{'neovim/nvim-lspconfig'},
+	{'hrsh7th/cmp-nvim-lsp'},
+	{'hrsh7th/nvim-cmp'},
+	{'L3MON4D3/LuaSnip'},
+
 	{'akinsho/toggleterm.nvim', version = '*', config = true}, --better terminal
 	'nvim-tree/nvim-web-devicons',
 	'goolord/alpha-nvim',--main menu
@@ -18,7 +27,6 @@ require("lazy").setup({
 	'nvim-telescope/telescope.nvim',--finder
 	'akinsho/bufferline.nvim',--tabs
 	tag = "v3.*",
-	'nvim-tree/nvim-tree.lua',--tree files
 	'ellisonleao/gruvbox.nvim',--theme
 	'nvim-lualine/lualine.nvim'--statusline
   })
