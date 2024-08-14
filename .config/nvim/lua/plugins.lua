@@ -23,6 +23,7 @@ require("lazy").setup({
 	{'akinsho/toggleterm.nvim', version = '*', config = true}, --better terminal
 	'nvim-tree/nvim-web-devicons',
 	'goolord/alpha-nvim',--main menu
+	'github/copilot.vim',
 	'nvim-lua/plenary.nvim',
 	'nvim-telescope/telescope.nvim',--finder
 	'akinsho/bufferline.nvim',--tabs
